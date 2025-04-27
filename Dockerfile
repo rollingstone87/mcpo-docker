@@ -7,6 +7,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     git \
     curl \
     ca-certificates \
+# Add support to using MCPO images to run a MCP Tool Image
+    docker.io \
     && rm -rf /var/lib/apt/lists/*
 
 # Install Node.js and npm via NodeSource 
